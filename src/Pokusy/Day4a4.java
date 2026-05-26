@@ -14,13 +14,17 @@ public class Day4a4 {
         for (int i = 0; i < jmena.length; i++) {
             if (jmena[i].equalsIgnoreCase(hledaneJmeno)) {
                 nalezeno = true;
-                System.out.println("Nalezeno");
                 break;
-            } else {
-                System.out.println("Nenalezeno");
             }
-
         }
+        if (nalezeno) {
+            System.out.println("Nalezeno");
+
+        } else {
+            System.out.println("Nenalezeno");
+        }
+
     }
 }
+
 
