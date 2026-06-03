@@ -2,17 +2,17 @@ package KapitolaOsm;
 
 class Dedicnost1 {
     public static void main(String[] args) {
-        Student s = new Student();
+        Studentik s = new Studentik();
         s.zobrazit();
 
     }
 }
 
-class Student {
+class Studentik {
     private int IDStudenta;
     private String jmeno;
 
-    Student() {
+    Studentik() {
         jmeno = "Jan Novak";
         IDStudenta = 12345;
     }
