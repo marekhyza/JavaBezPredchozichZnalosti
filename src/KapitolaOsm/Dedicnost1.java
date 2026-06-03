@@ -2,32 +2,30 @@ package KapitolaOsm;
 
 class Dedicnost1 {
     public static void main(String[] args) {
-        PostgradualniStudent ps = new PostgradualniStudent();
-        ps.zobrazit();
-    }
+        Student s = new Student();
+        s.zobrazit();
 
+    }
 }
 
 class Student {
     private int IDStudenta;
+    private String jmeno;
 
     Student() {
+        jmeno = "Jan Novak";
         IDStudenta = 12345;
     }
+    protected String getJmeno() {
+        return jmeno;
+    }
+
 
     protected void zobrazit() {
+        System.out.println("Jmeno studenta: " + jmeno);
         System.out.println("Identifikace studenta: " + IDStudenta);
     }
 }
 
-class PostgradualniStudent extends Student {
-    private int cisloPrace;
-    PostgradualniStudent() {
-        super();
-        cisloPrace = 1225;
 
-        System.out.println("Cislo prace: " + cisloPrace);
-    }
-
-}
 
