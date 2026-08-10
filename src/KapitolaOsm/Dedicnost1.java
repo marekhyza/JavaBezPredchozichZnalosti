@@ -1,6 +1,7 @@
 package KapitolaOsm;
 
-class Dedicnost1 {
+class
+Dedicnost1 {
     public static void main(String[] args) {
         Studentik s = new Studentik();
         s.zobrazit();

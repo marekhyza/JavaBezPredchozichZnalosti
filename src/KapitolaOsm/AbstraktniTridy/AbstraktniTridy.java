@@ -10,12 +10,12 @@ public class AbstraktniTridy {
 
 }
 
-abstract class Osoba {
+abstract class Dedicnost1 {
     abstract void zobrazit();
 }
 
 
-class Student extends Osoba {
+class Student extends Dedicnost1 {
     protected int IDStudenta;
 
     Student() {
